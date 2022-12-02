@@ -2,6 +2,7 @@
 
 /**
  * lsh_launch - function that lunch the other executable function
+ * @args:  pointer to arguments
  * Return: 1
  */
 
