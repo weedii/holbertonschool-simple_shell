@@ -1,3 +1,0 @@
-## C - Simple Shell
-
----
