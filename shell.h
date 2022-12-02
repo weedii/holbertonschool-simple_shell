@@ -15,7 +15,7 @@ void loop_function(void);
 char *read_line(void);
 char **split_line(char *line);
 int execute_function(char **args);
-int exit_function();
+int exit_function(void);
 int lsh_launch(char **args);
 
 #endif
