@@ -24,7 +24,7 @@
 | [main.c](./main.c) | The main function |
 | ...                | ...               |
 
-### Simple Shell :shell:
+### Simple Shell 🛠️:
 
 - The prompt is displayed each time a command has been executed
 - This program displays a prompt and wait for user type a command
@@ -78,3 +78,49 @@
 * wait4 (man 2 wait4)
 * write (man 2 write)
 ```
+
+---
+
+## 🔭 Compilation and testing
+
+### Our compiler:
+
+```
+gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh
+
+```
+
+### Testing
+
+- Your \*shell should work like this in interactive mode:
+
+```
+$ ./hsh
+($) /bin/ls
+hsh main.c shell.c
+($)
+($) exit
+$
+```
+
+- But also in non-interactive mode:
+
+```
+$ echo "/bin/ls" | ./hsh
+hsh main.c shell.c test_ls_2
+$
+$ cat test_ls_2
+/bin/ls
+/bin/ls
+$
+$ cat test_ls_2 | ./hsh
+hsh main.c shell.c test_ls_2
+hsh main.c shell.c test_ls_2
+$
+```
+
+## License :busts_in_silhouette:
+
+Authors :
+
+- Wael Abidi <5684@holbertonstudents.com> GitHub <https://github.com/weedii>
