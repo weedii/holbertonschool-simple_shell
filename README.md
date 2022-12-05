@@ -1,4 +1,4 @@
-## <h1 align="center">Simple Shell Project</h1>
+# <h1 align="center">Simple Shell Project</h1>
 
 ---
 
@@ -12,7 +12,29 @@
 
 ### Basic loop of a shell : REPL
 
-1 Print input
-2 Read a line from a standa input (solution)
-3 Turn the command lines string into an executable program
-4 Execute
+1. Print prompt
+2. Read a line from a standard input and parse it
+3. Execute the command line
+4. Loop and print the prompt again
+
+### Files contents :card_index_dividers:
+
+| File               | Description       |
+| ------------------ | ----------------- |
+| [main.c](./main.c) | The main function |
+| ...                | ...               |
+
+### Simple Shell :shell:
+
+- The prompt is displayed each time a command has been executed
+- This program displays a prompt and wait for user type a command
+- When the user type EXIT, shell will end and exit the interface
+- The program print the current environement when user type ENV
+- The program execute the most commun shell commands such as
+  - ls
+  - pwd
+  - cd
+  - exit
+  - env
+- The program quit when the user enter **CTRL + C**
+- The user could stop the program using **CTRL + D**
