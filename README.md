@@ -124,4 +124,4 @@ $
 Authors :
 
 - Wael Abidi < 5684@holbertonstudents.com >
-- GitHub <https://github.com/weedii>
+- GitHub < https://github.com/weedii >
