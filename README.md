@@ -38,3 +38,6 @@
   - env
 - The program quit when the user enter **CTRL + C**
 - The user could stop the program using **CTRL + D**
+
+* I made this flowchart to explaine whats happning
+  ![flowchart](C:\Users\abidi\Downloads\Simple Shell.jpg)
