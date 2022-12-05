@@ -40,4 +40,4 @@
 - The user could stop the program using **CTRL + D**
 
 * I made this flowchart to explaine more whats happning
-  ![flowchart](./C/Users/abidi/Downloads/flowchart.jpg)
+  <img src="C:\Users\abidi\Downloads\flowchart.jpg" alt="flowchart" />
