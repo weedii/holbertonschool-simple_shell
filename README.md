@@ -40,4 +40,4 @@
 - The user could stop the program using **CTRL + D**
 
 * I made this flowchart to explaine more whats happning
-  <img src="C:\Users\abidi\Downloads\flowchart.jpg" alt="flowchart" />
+  <img src="https://scontent.ftun10-1.fna.fbcdn.net/v/t1.15752-9/318099785_3238372739759675_6411486135834890360_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=ae9488&_nc_ohc=v6Xox-mUd4QAX_cGIUh&_nc_ht=scontent.ftun10-1.fna&oh=03_AdRwOmbNfZ9P0f8sjkM1rP4tNnEGSi8kXKAhEnMCRXzjyA&oe=63B5B986" alt="flowchart" />
