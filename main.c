@@ -51,7 +51,7 @@ void loop(int input)
 		{
 			free(line);
 			free_array(cmd);
-			exit(0);
+			exit(EXIT_SUCCESS);
 		}
 
 		if (stat(cmd[0], &state) != 0)
