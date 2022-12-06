@@ -7,15 +7,12 @@
 #include <unistd.h>
 #include <sys/wait.h>
 #include <sys/types.h>
+#include <sys/stat.h>
 
-#define LSH_TOK_BUFSIZE 64
-#define LSH_TOK_DELIM " \t\r\n\a"
-
-void loop_function(void);
-char *read_line(void);
-char **split_line(char *line);
-int execute_function(char **args);
-int exit_function(void);
-int lsh_launch(char **args);
+char **str_split(char *line, char *delim);
+void free_array(char **array);
+void loop(int input);
+void get_path(char **cmd);
+void exec_command(char **cmd);
 
 #endif
