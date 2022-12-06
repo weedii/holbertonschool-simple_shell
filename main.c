@@ -27,13 +27,20 @@ void loop(int input)
 {
 	char *line = NULL, **cmd;
 	size_t size = 0;
+	int lengh;
 	struct stat state;
 
 	while (1)
 	{
 		if (input)
 			write(STDOUT_FILENO, "$ ", 2);
-		getline(&line, &size, stdin);
+		lengh = getline(&line, &size, stdin);
+
+		if (lengh == EOF)
+		{
+			free(line);
+			exit(0);
+		}
 
 		cmd = str_split(line, " \t\r\n");
 
