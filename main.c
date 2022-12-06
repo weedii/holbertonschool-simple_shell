@@ -22,7 +22,6 @@ void free_array(char **array)
  * loop - function loop REPL
  * @input:  return value of isatty 0 or 1
  */
-
 void loop(int input)
 {
 	char *line = NULL, **cmd;
@@ -35,32 +34,26 @@ void loop(int input)
 		if (input)
 			write(STDOUT_FILENO, "$ ", 2);
 		lengh = getline(&line, &size, stdin);
-
 		if (lengh == EOF)
 		{
 			free(line);
 			exit(0);
 		}
-
 		cmd = str_split(line, " \t\r\n");
-
 		if (strcmp(line, "\n") == 0)
 			continue;
-
 		if (strcmp(cmd[0], "exit") == 0)
 		{
 			free(line);
 			free_array(cmd);
 			exit(0);
 		}
-
 		if (strcmp(cmd[0], "env") == 0)
 		{
 			print_environment();
 			free_array(cmd);
 			continue;
 		}
-
 		if (stat(cmd[0], &state) != 0)
 			get_path(cmd);
 		if (cmd[0] == NULL)
