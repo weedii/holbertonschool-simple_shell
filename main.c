@@ -54,6 +54,13 @@ void loop(int input)
 			exit(0);
 		}
 
+		if (strcmp(cmd[0], "env") == 0)
+		{
+			print_environment();
+			free_array(cmd);
+			continue;
+		}
+
 		if (stat(cmd[0], &state) != 0)
 			get_path(cmd);
 		if (cmd[0] == NULL)
