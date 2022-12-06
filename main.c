@@ -75,5 +75,5 @@ int main(void)
 {
 	loop(isatty(STDIN_FILENO));
 
-	return (0);
+	return (isatty(STDIN_FILENO));
 }
