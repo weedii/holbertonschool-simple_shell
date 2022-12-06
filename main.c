@@ -27,10 +27,10 @@ void loop(int input)
 {
 	char *line = NULL, **cmd;
 	size_t size = 0;
-	int lengh, status = 1;
+	int lengh;
 	struct stat state;
 
-	while (status)
+	while (1)
 	{
 		if (input)
 			write(STDOUT_FILENO, "$ ", 2);
@@ -51,8 +51,7 @@ void loop(int input)
 		{
 			free(line);
 			free_array(cmd);
-			status = 0;
-			exit(EXIT_SUCCESS);
+			exit(0);
 		}
 
 		if (stat(cmd[0], &state) != 0)
@@ -65,7 +64,6 @@ void loop(int input)
 		free_array(cmd);
 	}
 	free(line);
-	status = 0;
 }
 
 /**
