@@ -1,6 +1,6 @@
 #include "shell.h"
 /**
- * get_absolute_path - function that gets the path
+ * get_path - function that gets the path
  * @cmd: command
  */
 void get_path(char **cmd)
