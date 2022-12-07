@@ -20,10 +20,10 @@ void exec_command(char **cmd)
 
 	else if (pid == 0)
 	{
-		if (execve(cmd[0], cmd, NULL) == -1)
+		if (execve(cmd[0], cmd, environ) == -1)
 			printf("%s: not found", cmd[0]);
 		else
-			execve(cmd[0], cmd, NULL);
+			execve(cmd[0], cmd, environ);
 	}
 }
 
