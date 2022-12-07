@@ -73,7 +73,8 @@ void loop(int input)
 
 int main(void)
 {
+	signal(SIGINT, sigintHandler);
 	loop(isatty(STDIN_FILENO));
 
-	return (isatty(STDIN_FILENO));
+	return (0);
 }
