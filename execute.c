@@ -10,7 +10,8 @@ void exec_command(char **cmd)
 	pid_t pid = 0;
 	int i = 0;
 
-	pid = fork();
+	if (cmd)
+		pid = fork();
 	if (pid == -1)
 		printf("Error in Fork\n");
 	else if (pid > 0)
@@ -19,10 +20,10 @@ void exec_command(char **cmd)
 
 	else if (pid == 0)
 	{
-		/* Child process execute the command or exit if execve fail */
 		if (execve(cmd[0], cmd, NULL) == -1)
-			perror("shell");
-		exit(EXIT_FAILURE);
+			printf("%s: not found", cmd[0]);
+		else
+			execve(cmd[0], cmd, NULL);
 	}
 }
 
