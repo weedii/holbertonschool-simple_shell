@@ -25,3 +25,15 @@ void exec_command(char **cmd)
 		exit(EXIT_FAILURE);
 	}
 }
+
+/**
+ * sigintHandler - function that handle Control-C signal
+ * @sig_num: sig_num
+ */
+
+void sigintHandler(__attribute__((unused)) int sig_num)
+{
+	signal(SIGINT, sigintHandler);
+	printf("\n");
+	write(STDOUT_FILENO, "$ ", 2);
+}
