@@ -17,5 +17,6 @@ void loop(int input);
 void get_path(char **cmd);
 void exec_command(char **cmd);
 void print_environment(void);
+void sigintHandler(int sig_num);
 
 #endif
