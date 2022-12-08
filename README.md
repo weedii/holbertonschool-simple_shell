@@ -36,7 +36,6 @@
   - cd
   - exit
   - env
-- The program quit when the user enter **CTRL + C**
 - The user could stop the program using **CTRL + D**
 
 * I made this flowchart to explaine more whats happning
@@ -118,6 +117,8 @@ hsh main.c shell.c test_ls_2
 hsh main.c shell.c test_ls_2
 $
 ```
+
+---
 
 ## License :busts_in_silhouette:
 
