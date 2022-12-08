@@ -19,10 +19,13 @@
 
 ### Files contents :card_index_dividers:
 
-| File               | Description       |
-| ------------------ | ----------------- |
-| [main.c](./main.c) | The main function |
-| ...                | ...               |
+| File                                       | Description                                      |
+| ------------------------------------------ | ------------------------------------------------ |
+| [main Function](./main.c)                  | The main function                                |
+| [Split Function](./split.c)                | Function that parse or split a line              |
+| [Print Environment](./print_environment.c) | Function that print environment                  |
+| [Get Path](./get_path.c)                   | Function that returns the path of a command line |
+| [Execute Function](./execute.c)            | Function that executes a command line            |
 
 ### Simple Shell 🛠️:
 
@@ -41,6 +44,10 @@
 * I made this flowchart to explaine more whats happning
 
   <img src="https://scontent.ftun10-1.fna.fbcdn.net/v/t1.15752-9/318099785_3238372739759675_6411486135834890360_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=ae9488&_nc_ohc=v6Xox-mUd4QAX_cGIUh&_nc_ht=scontent.ftun10-1.fna&oh=03_AdRwOmbNfZ9P0f8sjkM1rP4tNnEGSi8kXKAhEnMCRXzjyA&oe=63B5B986" alt="flowchart" />
+
+### For more information:
+
+- [Manual page for Simple Shell](./man_1_simple_shell)
 
 ## List of allowed functions and system calls in this project :
 
