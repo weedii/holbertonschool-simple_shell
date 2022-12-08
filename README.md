@@ -19,14 +19,16 @@
 
 ### Files contents :card_index_dividers:
 
-| File                                       | Description                                      |
-| ------------------------------------------ | ------------------------------------------------ |
-| [main Function](./main.c)                  | The main function                                |
-| [Split Function](./split.c)                | Function that parse or split a line              |
-| [Print Environment](./print_environment.c) | Function that print environment                  |
-| [Get Path](./get_path.c)                   | Function that returns the path of a command line |
-| [Execute Function](./execute.c)            | Function that executes a command line            |
-| [Header File](./shell.h)                   | This file is the Header File                     |
+| File                                                 | Description                                      |
+| ---------------------------------------------------- | ------------------------------------------------ |
+| [main Function](./main.c)                            | The main function                                |
+| [Split Function](./split.c)                          | Function that parse or split a line              |
+| [Print Environment](./print_environment.c)           | Function that print environment                  |
+| [Get Path](./get_path.c)                             | Function that returns the path of a command line |
+| [Execute Function](./execute.c)                      | Function that executes a command line            |
+| [Header File](./shell.h)                             | This file is the Header File                     |
+| [Manual Page for Simple Shell](./man_1_simple_shell) | Man Page                                         |
+| [AUTHORS](./AUTHORS)                                 | AUTHORS                                          |
 
 ### Simple Shell 🛠️:
 
