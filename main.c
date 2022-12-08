@@ -24,7 +24,7 @@ void free_array(char **array)
  */
 void loop(int input)
 {
-	char *line = NULL, **cmd;
+	char *line = NULL, **cmd = NULL;
 	size_t size = 0;
 	int lengh;
 	struct stat state;
@@ -39,9 +39,9 @@ void loop(int input)
 			free(line);
 			exit(0);
 		}
-		cmd = str_split(line, " \t\r\n");
 		if (strcmp(line, "\n") == 0)
 			continue;
+		cmd = str_split(line, " \t\r\n");
 		if (strcmp(cmd[0], "exit") == 0)
 		{
 			free(line);
