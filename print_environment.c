@@ -13,3 +13,29 @@ void print_environment(void)
 		printf("%s\n", *s);
 	}
 }
+
+/**
+ * if_conditions - function test for built in commands
+ * @cmd:  command
+ * @line: line
+ */
+void if_conditions(char **cmd, char *line)
+{
+	struct stat state;
+
+	if (strcmp(cmd[0], "exit") == 0)
+	{
+		free(line);
+		if (cmd[1])
+			exit(atoi(cmd[1]));
+		free_array(cmd);
+		exit(0);
+	}
+
+	if (stat(cmd[0], &state) != 0)
+		get_path(cmd);
+	if (cmd[0] == NULL)
+		printf("Command not found\n");
+	else
+		exec_command(cmd);
+}
