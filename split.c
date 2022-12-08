@@ -9,8 +9,7 @@
 
 char **str_split(char *line, char *delim)
 {
-	char *ptr = NULL;
-	char **cmd = NULL;
+	char *ptr = NULL, **cmd = NULL;
 	size_t i = 0;
 
 	ptr = strtok(line, delim);
