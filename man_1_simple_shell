@@ -1,0 +1,54 @@
+./"Simple Shell manual page
+.TH Simple_Shell "2022-12-08" "Simple Shell man page" Simple_Shell
+
+.SH NAME
+Simple Shell
+
+.SH SYNOPSIS
+[options] [command_string | file]
+
+.SH DESCRIPTION
+Simple Shell is an sh-compatible command language interpreter that
+executes commands read from the standard input or from a file.
+
+Simple shell is a final semester project which is basicly an interface between the user and the kernel,
+it is a linux command lines interpreter as simple as this.
+
+.SH COMMAND
+
+ls: Shows the contents of a folder.
+
+mkdir: Create a folder.
+
+rmdir: Delete a folder
+
+touch: create a file.
+
+rm: Delete files
+
+cp: copy a file to another place.
+
+mv: Move a file.
+
+cat: Shows the contents of a file.
+
+echo: displays what you write.
+
+pwd: Shows the path of the folder where we are.
+
+sleep: "Sleep" system during the seconds you indicate.
+
+sh, bash: Interpreters of commands.
+
+chmod: Change the permissions of a file.
+
+chgrp: Change a file group.
+
+chown: Change the user of a file.
+
+.SH EXAMPLE OF THE COMMAND
+
+Suppose that the following command is entered by keyboard: ls -a, The result when executing the command will be the all files in directory you choose.
+
+.SH AUTHOR
+Wael Abidi (https://github.com/weedii)
